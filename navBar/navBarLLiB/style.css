@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --a-color: white;
+    --a-color-hover:#0088a9;
+    --button-color: rgba(0, 136, 169, 1);
+    --button-color-hover:rgba(0, 136, 169, 0.8);
+}
+li,a,button{
+    font-family:'Montserrat', sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--a-color) ;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 5px 10%; /*aqui para cambiar el ancho del navegador */
+    background-color: #24252a;
+    /* si quieren añadirle una sombra aqui el color recomendado  */
+    box-shadow: 0 2px 8px rgb(42, 46, 51);
+}
+
+/* Aqui es donde esta el logo en este caso svg de ancla */
+.fas{
+    width: 40px;
+    height: auto;
+    color: white;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover{
+    color: var(--a-color-hover);
+}
+
+button{
+    padding: 9px 25px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: var(--button-color-hover);
+}
+/* font-family: 'Montserrat', sans-serif; */

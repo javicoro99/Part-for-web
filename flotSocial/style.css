@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --light-black:#151515;
+    --hover-color: lightcoral;
+}
+.floatList{
+    position: fixed;
+    top: 50%;
+    left: 96.5%;
+    width: 150px;
+    height: 105px;
+    background-color: var(--light-black);
+    border-radius: 10px 0px 0px 10px ;
+    z-index: 10 ;
+}
+
+.nav{
+    list-style: none;
+    padding: 2px;
+}
+
+.navList a img:hover{
+    background-color: var(--hover-color);
+    border-radius: 60%;
+
+}
